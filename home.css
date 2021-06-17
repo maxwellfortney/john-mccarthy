@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap");
+
+body,
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: radial-gradient(
+        92.85% 183.61% at 9.65% 13.18%,
+        #0015bc 0%,
+        hsl(0, 100%, 50%) 100%
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.hideOverflow {
+    overflow-y: hidden !important;
+}
+
+.mainContainer {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
+}
+
+.showMenu {
+    left: 0 !important;
+}
+
+#mobileMenu {
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    left: 100vw;
+    background-color: white;
+    transition: all ease-in-out 0.2s;
+}
+
+#menuIcon {
+    margin: 0;
+    width: 60px;
+    height: 45px;
+    position: relative;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.open span {
+    background: black !important;
+}
+
+#menuIcon span {
+    display: block;
+    position: absolute;
+    height: 9px;
+    width: 100%;
+    background: white;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+}
+
+#menuIcon span:nth-child(1) {
+    top: 0px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+#menuIcon span:nth-child(2) {
+    top: 18px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+#menuIcon span:nth-child(3) {
+    top: 36px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+#menuIcon.open span:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: -3px;
+    left: 8px;
+}
+
+#menuIcon.open span:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+}
+
+#menuIcon.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 39px;
+    left: 8px;
+}
+
+.navbar {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 115px;
+    margin-top: 15px;
+}
+
+.navlinks {
+    display: flex;
+    color: white;
+    font-size: 23px;
+    font-weight: 800;
+}
+
+.navlinks a {
+    color: white;
+    text-decoration: none;
+    transition: opacity ease-in-out 0.15s;
+}
+
+.navlinks a:hover {
+    opacity: 0.7;
+}
+
+.navlinks a:not(:last-child) {
+    margin-right: 15px;
+}
+
+.jumbotron {
+    flex-grow: 1;
+    width: 95%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.jumbotron .left {
+    padding-left: 3%;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.jumbotron .left h1 {
+    color: white;
+    font-size: 5.5vw;
+    line-height: 0.95;
+    margin: 0;
+}
+
+.jumbotron .left h2 {
+    color: white;
+    font-size: 1.8vw;
+    margin: 0;
+    font-weight: 500;
+}
+
+.jumbotron .left p:first-of-type {
+    margin-top: 20px;
+}
+
+.jumbotron .left p {
+    color: white;
+    font-size: 1.2vw;
+    margin: 0;
+    font-weight: 300;
+}
+
+.jumbotron .left span {
+    font-weight: 500;
+    font-size: 1.2vw;
+}
+
+.jumbotron .left a {
+    color: white;
+    font-size: 1.2vw;
+    font-weight: 600;
+    margin-top: 25px;
+}
+
+.jumbotron .right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.jumbotron .right img {
+    width: 75%;
+}
+
+#About {
+    background-color: white;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+#About h2 {
+    font-size: 38px;
+    align-self: flex-start;
+    margin: 0;
+}
+
+#About p {
+    font-size: 20px;
+    width: 95%;
+    margin: 15px 0 15px 0;
+}
+
+#News {
+    margin: 50px 0 50px 0;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+#News h2 {
+    color: white;
+    font-size: 38px;
+    align-self: flex-start;
+    margin: 0;
+}
+
+#News iframe {
+    margin: 40px 0 40px 0;
+}
+
+#Promises {
+    background-color: white;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+#Promises h2 {
+    font-size: 38px;
+    align-self: flex-start;
+    margin: 0;
+    width: 95%;
+}
+
+#Promises h3:first-of-type {
+    font-size: 24px;
+    margin: 0;
+    width: 95%;
+    margin-bottom: 35px;
+}
+
+#Promises h3 {
+    font-size: 30px;
+    margin: 0;
+    width: 95%;
+}
+
+#Promises p {
+    width: 95%;
+    font-size: 20px;
+    margin: 10px 0 10px 0;
+}
+
+#Footer {
+    margin: 50px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    color: white;
+}
+
+#Footer h4 {
+    margin: 0;
+}
+
+#Footer div {
+    display: flex;
+    justify-content: center;
+}
+
+#Footer p {
+    margin: 5px 0 5px 0;
+}
+
+#Footer div p {
+    font-size: 20px;
+    font-weight: 800;
+    margin: 0 15px 0 15px;
+}
