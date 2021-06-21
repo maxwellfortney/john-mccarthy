@@ -37,8 +37,10 @@
         />
         <meta property="twitter:image" content="/newImages/meta_image.jpg" />
 
-        <link rel="stylesheet" href="home.css" />
-        <link rel="stylesheet" href="home_media_queries.css" />
+        <link rel="stylesheet" href="css/home.css" />
+        <link rel="stylesheet" href="css/navbar.css" />
+        <link rel="stylesheet" href="css/navbar_media_queries.css" />
+        <link rel="stylesheet" href="css/home_media_queries.css" />
 
         <script>
             function handleMenu() {
@@ -54,9 +56,19 @@
     <body>
         <div id="mobileMenu"></div>
         <div class="mainContainer">
+            <img
+                src="newImages/md_flag.png"
+                style="
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    z-index: -1;
+                    width: 50%;
+                "
+            />
             <div class="navbar">
                 <div style="display: flex; height: 115px; align-items: center">
-                    <img
+                    <!-- <img
                         src="newImages/mgc_sao.png"
                         style="height: 115px"
                         alt="Montgomery County State's Attorney Logo"
@@ -65,13 +77,14 @@
                         style="color: white; font-size: 45px; margin-left: 10px"
                     >
                         2022
-                    </h1>
+                    </h1> -->
                 </div>
                 <div class="navlinks">
                     <a href="#About">About</a>
                     <a href="#News">News</a>
                     <a href="#Promises">Promises</a>
                     <a href="maillist.html">Mail List</a>
+                    <a href="volunteer.html">Volunteer</a>
                     <a href="donate.html">Donate</a>
                     <a href="contact.html">Contact</a>
                 </div>
@@ -83,12 +96,13 @@
             </div>
             <div class="jumbotron">
                 <div class="left">
-                    <h1>
-                        Re-elect<br />
-                        John McCarthy
-                    </h1>
-                    <h2>A Record of Reform and Innovation</h2>
-                    <p><span>Primary Early Voting:</span> 6/16/22 - 6/23/22</p>
+                    <h1>John McCarthy</h1>
+                    <h2>
+                        for Montgomery County<br />
+                        State’s Attorney
+                    </h2>
+                    <h3>A Record of Reform and Innovation</h3>
+                    <!-- <p><span>Primary Early Voting:</span> 6/16/22 - 6/23/22</p>
                     <p><span>Primary Election Day:</span> 6/28/22</p>
                     <p><span>General Early Voting:</span> 10/27/22 - 11/3/22</p>
                     <p><span>General Election Day:</span> 11/8/22</p>
@@ -98,11 +112,12 @@
                         target="_blank"
                         href="https://voterservices.elections.maryland.gov/PollingPlaceSearch"
                         >Find your polling place</a
-                    >
+                    > -->
+                    <a href="/donate.html">Donate</a>
                 </div>
                 <div class="right">
                     <img
-                        src="newImages/john_mccarthy_frontal.png"
+                        src="newImages/john_mccarthy_frontal_new.png"
                         alt="John McCarthy Headshot"
                     />
                 </div>
