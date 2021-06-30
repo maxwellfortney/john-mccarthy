@@ -164,7 +164,7 @@ body {
     margin: 40px 0 40px 0;
 }
 
-#Promises {
+#Innovation {
     background-color: white;
     width: 90%;
     display: flex;
@@ -175,28 +175,32 @@ body {
     padding: 15px;
 }
 
-#Promises h2 {
+#Innovation h2 {
     font-size: 38px;
     align-self: flex-start;
     margin: 0;
     width: 95%;
 }
 
-#Promises h3:first-of-type {
+/* #Innovation h3:first-of-type {
     font-size: 24px;
     margin: 0;
     width: 95%;
     margin-bottom: 35px;
 }
 
-#Promises h3 {
+#Innovation h3 {
     font-size: 30px;
     margin: 0;
     width: 95%;
 }
 
-#Promises p {
+#Innovation p {
     width: 95%;
     font-size: 20px;
     margin: 10px 0 10px 0;
+} */
+
+#Innovation li {
+    margin: 8px 0;
 }

@@ -1,73 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- Primary Meta Tags -->
-        <title>John McCarthy for State's Attorney</title>
-        <meta name="title" content="John McCarthy for State's Attorney" />
-        <meta
-            name="description"
-            content="Re-elect John McCarthy for Montgomery County State's Attorney - A Record of Reform and Innovation"
-        />
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- Open Graph / Facebook -->
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="http://www.johnmccarthy.us/" />
-        <meta
-            property="og:title"
-            content="John McCarthy for State's Attorney"
-        />
-        <meta
-            property="og:description"
-            content="Re-elect John McCarthy for Montgomery County State's Attorney - A Record of Reform and Innovation"
-        />
-        <meta property="og:image" content="/newImages/meta_image.jpg" />
+    <!-- Primary Meta Tags -->
+    <title>John McCarthy for State's Attorney</title>
+    <meta name="title" content="John McCarthy for State's Attorney" />
+    <meta name="description"
+        content="Re-elect John McCarthy for Montgomery County State's Attorney - A Record of Reform and Innovation" />
 
-        <!-- Twitter -->
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="http://www.johnmccarthy.us/" />
-        <meta
-            property="twitter:title"
-            content="John McCarthy for State's Attorney"
-        />
-        <meta
-            property="twitter:description"
-            content="Re-elect John McCarthy for Montgomery County State's Attorney - A Record of Reform and Innovation"
-        />
-        <meta property="twitter:image" content="/newImages/meta_image.jpg" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.johnmccarthy.us/" />
+    <meta property="og:title" content="John McCarthy for State's Attorney" />
+    <meta property="og:description"
+        content="Re-elect John McCarthy for Montgomery County State's Attorney - A Record of Reform and Innovation" />
+    <meta property="og:image" content="/newImages/meta_image.jpg" />
 
-        <link rel="stylesheet" href="css/navbar.css" />
-        <link rel="stylesheet" href="css/navbar_media_queries.css" />
-        <link rel="stylesheet" href="css/maillist.css" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="http://www.johnmccarthy.us/" />
+    <meta property="twitter:title" content="John McCarthy for State's Attorney" />
+    <meta property="twitter:description"
+        content="Re-elect John McCarthy for Montgomery County State's Attorney - A Record of Reform and Innovation" />
+    <meta property="twitter:image" content="/newImages/meta_image.jpg" />
 
-        <script>
-            function handleMenu() {
-                document.querySelector("#menuIcon").classList.toggle("open");
-                document
-                    .querySelector("#mobileMenu")
-                    .classList.toggle("showMenu");
-                document.querySelector("body").classList.toggle("hideOverflow");
-                document.querySelector("html").classList.toggle("hideOverflow");
-            }
-        </script>
-    </head>
-    <body>
-        <div id="mobileMenu"></div>
-        <div class="mainContainer">
-            <img
-                src="newImages/md_flag.png"
-                style="
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/navbar_media_queries.css" />
+    <link rel="stylesheet" href="css/maillist.css" />
+
+    <script>
+        function handleMenu() {
+            document.querySelector("#menuIcon").classList.toggle("open");
+            document
+                .querySelector("#mobileMenu")
+                .classList.toggle("showMenu");
+            document.querySelector("body").classList.toggle("hideOverflow");
+            document.querySelector("html").classList.toggle("hideOverflow");
+        }
+    </script>
+</head>
+
+<body>
+    <div id="mobileMenu"></div>
+    <div class="mainContainer">
+        <img src="newImages/md_flag.png" style="
                     position: absolute;
                     left: 0;
                     top: 0;
                     z-index: -1;
                     width: 50%;
-                "
-            />
-            <div class="navbar">
-                <div style="display: flex; height: 115px; align-items: center">
-                    <!-- <img
+                " />
+        <div class="navbar">
+            <div style="display: flex; height: 115px; align-items: center">
+                <!-- <img
                         src="newImages/mgc_sao.png"
                         style="height: 115px"
                         alt="Montgomery County State's Attorney Logo"
@@ -77,89 +64,72 @@
                     >
                         2022
                     </h1> -->
-                </div>
-                <div class="navlinks">
-                    <a href="index.html#About">About</a>
-                    <a href="index.html#News">News</a>
-                    <a href="index.html#Promises">Promises</a>
-                    <a href="maillist.html">Mail List</a>
-                    <a href="volunteer.html">Volunteer</a>
-                    <a href="donate.html">Donate</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-                <div id="menuIcon" onclick="handleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
             </div>
-            <div class="jumbotron">
-                <form
-                    method="POST"
-                    action="maillist_complete.php"
-                    style="
+            <div class="navlinks">
+                <a href="index.html#About">About</a>
+                <a href="index.html#News">News</a>
+                <a href="index.html#Innovation">Innovation</a>
+                <a href="maillist.html">Mail List</a>
+                <a href="volunteer.html">Volunteer</a>
+                <a href="donate.html">Donate</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div id="menuIcon" onclick="handleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="jumbotron">
+            <form method="POST" action="maillist_complete.php" style="
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
-                    "
-                >
-                    <p
-                        style="
+                    ">
+                <p style="
                             font-weight: 800;
                             color: white;
                             font-size: 26px;
                             width: 50%;
-                        "
-                    >
-                        Submit Your Email Address to receive mailings on
-                        important information pertaining to John McCarthy.
-                    </p>
-                    <p style="color: white; font-weight: 700">
-                        Email Address
-                        <input
-                            type="text"
-                            name="email_address"
-                            size="51"
-                            style="padding: 5px 3px"
-                        />
-                        <input
-                            type="submit"
-                            value="Submit"
-                            name="B1"
-                            id="submit"
-                        />
-                        <input
-                            type="reset"
-                            value="Reset"
-                            name="B2"
-                            id="reset"
-                        />
-                    </p>
-                </form>
-            </div>
+                        ">
+                    Submit Your Email Address to receive mailings on
+                    important information pertaining to John McCarthy.
+                </p>
+                <p style="color: white; font-weight: 700">
+                    Email Address
+                    <input type="text" name="email_address" size="51" style="padding: 5px 3px" />
+                    <input type="submit" value="Submit" name="B1" id="submit" />
+                    <input type="reset" value="Reset" name="B2" id="reset" />
+                </p>
+            </form>
         </div>
+    </div>
 
-        <div id="Footer">
-            <h4>
-                By authority of John Patrick Kudel, PA, Treasurer, Friends of
-                John McCarthy Campaign for the Office of Montgomery County,
-                Maryland, State's Attorney
-            </h4>
-            <p>
-                Questions, email John Patrick Kudel, PA, Treasurer, at
-                jpkudel@karplawfirm.net
-            </p>
-            <p style="margin: 5px 0 15px 0">
-                Friends of John McCarthy Campaign Address: 2273 Research Blvd.
-                Suite 200 Rockville MD 20850
-            </p>
-            <div>
-                <p>Home</p>
-                <p>Mail List</p>
-                <p>Donate</p>
-                <p>Contact</p>
-            </div>
+    <div id="Footer">
+        <h4>
+            By authority of John Patrick Kudel, PA, Treasurer, Friends of
+            John McCarthy Campaign for the Office of Montgomery County,
+            Maryland, State's Attorney
+        </h4>
+        <p>
+            Questions, email John Patrick Kudel, PA, Treasurer, at
+            jpkudel@karplawfirm.net
+        </p>
+        <p style="margin: 5px 0 15px 0">
+            Friends of John McCarthy Campaign Address: 2273 Research Blvd.
+            Suite 200 Rockville MD 20850
+        </p>
+        <div>
+            <a href="index.html#About">About</a>
+            <a href="index.html#News">News</a>
+            <a href="index.html#Innovation">Innovation</a>
+            <a href="maillist.html">Mail List</a>
+            <a href="volunteer.html">Volunteer</a>
+            <a href="donate.html">Donate</a>
+            <a href="contact.html">Contact</a>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>
